@@ -1,27 +1,71 @@
-# GraficasApp
+# GraficasApp - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+El proyecto fue elaborado con [Angular CLI](https://github.com/angular/angular-cli) versión 13.3.3.
+## **Funcionalidad**
 
-## Development server
+Esta aplicación presenta pequeños ejemplos sobre el uso de gráficas de ng2 chart en Angular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Se puede visualizar gráficas de tipo:
 
-## Code scaffolding
+- barra
+- dona (con información etática y dinámica)
+- dona con peticón http.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## **Temas** ##
 
-## Build
+Este es un breve listado de los temas fundamentales:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- gráficas de ng2 chart
+- operador map de RxJS
+- clases de bootstrap
+- peticiones http
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Tecnologías utilizadas:**
 
-## Running end-to-end tests
+- Angular
+- Bootstrap
+- ng2 Chart
+- JSON Server
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+<br>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## **JSON SERVER** 
+https://www.npmjs.com/package/json-server
+
+Es un paquete de node que permite tener rápidamente un backend para crear prototipos, provee una API REST falsa completa sin codificar nada. 
+
+Para instalarlo debe utilizar el comando
+
+```
+npm install -g json-server
+```
+
+Se hizo uso en la sección "Dona Http" especificamente para obtener los datos sobre el número de usuarios  en las distintas redes sociales. Estos datos se encuentra en la base de datos `db.json`. La base de datos fue colocada en la carpeta **assets**
+
+Levantar el JSON Server con el comando `json-server --watch db.json`
+
+<br>
+
+## **Aplicación Netlify**
+
+
+La aplicación se encuentra desplegada en:
+
+
+
+La graficá *Dona Http* no funciona en el sitio debido a que se debe desplegar el backend. Si se desea observarla, deberá descargar y ejecutar el proyecto levantando el backend también. 
+
+## **Recomendaciones**
+
+<br>
+
+- Recuerden reconstruir los módulos de Node con `npm install`
+
+- Para correr el servidor de desarrollo ejecute `ng serve -o`. La aplicación se recargará automáticamente si cambia cualquiera de los archivos de origen.
+
+- Para correr el backend de prueba dirijase al directorio donde se encuentra el archivo `db.json` y ejecute el comando `json-server --watch db.json`
+
+- Si desea compilar el proyecto ejecute `ng build`.
+
