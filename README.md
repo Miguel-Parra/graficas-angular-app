@@ -53,9 +53,9 @@ Levantar el JSON Server con el comando `json-server --watch db.json`
 
 La aplicación se encuentra desplegada en:
 
+https://graficas-app-angular-mp.netlify.app/
 
-
-La graficá *Dona Http* no funciona en el sitio debido a que se debe desplegar el backend. Si se desea observarla, deberá descargar y ejecutar el proyecto levantando el backend también. 
+La gráfica *Dona Http* no funciona en el sitio debido a que se debe desplegar el backend. Si se desea observarla, deberá descargar y ejecutar el proyecto levantando el backend también. 
 
 ## **Recomendaciones**
 
